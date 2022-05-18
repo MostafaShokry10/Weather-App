@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./wf.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background 50ms ease-in 50ms;
+   
+}
+
+.headline {
+    color: white;
+    font-size: 25px;
+    background: linear-gradient(45deg, #ff000060, #ff730060, #fffb0060, #48ff0060, #00ffd560, #002aff60, #7b00ff60, #ff00c860, #ff000060);
+    padding: 10px;
+    text-align: center;
+}
+
+
+#zip,
+#feelings,
+#generate {
+    background: #17053866;
+    margin: 60px auto 0px;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    display: block;
+    font-size: 15px;
+    resize: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#zip::placeholder,
+#feelings::placeholder {
+    color: white;
+    font-family: sans-serif;
+    line-height: 38px;
+}
+#zip:hover::placeholder,
+#feelings:hover::placeholder {
+    
+    opacity: 0;
+}
+
+#error {
+    background-color: #c70505;
+    color: white;
+    font-size: large;
+    width: 22%;
+    text-align: center;
+    margin: 0px auto 12px;
+    border-radius: 1px 0px 30px 30px;
+    display: block;
+}
+
+#feelings {
+    margin-top: 5px;
+    line-height: 38px;
+}
+
+#generate {
+    width: 20%;
+    margin-top: 18px;
+    background: #181f4bc7;
+    cursor: pointer;
+}
+#generate:hover {
+    background: linear-gradient(45deg, #ff000080, #ff730080, #fffb0080, #48ff0080, #00ffd580, #002aff80, #7b00ff80, #ff00c880, #ff000080);
+}
+
+#entry {
+    width: 50%;
+    background: #07133340;
+    margin: 50px auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 40%;
+    opacity: 0;
+    transition: all 2s ease;
+    background-color: inherit;
+    backdrop-filter: blur(16px);
+}
+
+.title {
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+}
+
+#entryHolder {
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "main sidebar1"
+    "main sidebar1"
+    "main sidebar2"
+    "main footer2";
+    font-size: 1.5vw;
+}
+
+#content {
+    grid-column: 1 / -1;
+    font-size: 2vw;
+    grid-area: footer2;
+}
+
+#city{
+    font-family: Fantasy;
+    font-size: 4vw;
+    grid-area: sidebar1;
+}
+#temp {
+    font-family: Calibri;
+    font-size: 10vw;
+}
+#date {
+    grid-area: sidebar2;
+}
+#weather{
+grid-area: main;
+}
+#description {
+    display: flex;
+    font-size: 2vw;
+    font-family: cursive;
+    color: rgb(2, 2, 2);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#content,
+#date {
+    text-align: center;
+    align-items: center;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family:Helvetica,sans-serif;
+}
